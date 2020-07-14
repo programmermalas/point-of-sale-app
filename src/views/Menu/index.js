@@ -13,7 +13,7 @@ const Menu = () => {
   const handleSearch = (value) => {
     setSearch(value);
   };
-  
+
   return (
     <div className="min-h-screen h-screen flex flex-col bg-gray-100">
       <NavBar search={search} onHandleSearch={handleSearch} />
