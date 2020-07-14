@@ -15,14 +15,14 @@ const Checkout = () => {
     <div className="flex flex-col border-t pb-5">
       <ul>
         <li className="flex justify-between font-medium text-gray-600 pt-3">
-          Subtotal <span>Rp {sub_total},-</span>
+          Subtotal <span>Rp {new Intl.NumberFormat('de-DE').format(sub_total)},-</span>
         </li>
         <li className="flex justify-between font-medium text-gray-600 pt-3">
-          PPN 10% <span>Rp {ppn},-</span>
+          PPN 10% <span>Rp {new Intl.NumberFormat('de-DE').format(ppn)},-</span>
         </li>
         <li className="flex justify-between font-bold text-gray-700 py-5">
           Total
-          <span>Rp {total},-</span>
+          <span>Rp {new Intl.NumberFormat('de-DE').format(total)},-</span>
         </li>
       </ul>
 

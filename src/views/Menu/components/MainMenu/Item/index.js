@@ -15,7 +15,7 @@ const Item = ({ element, clickHandler }) => (
         <label className="font-bold text-md text-gray-700">
           {element.title}
         </label>
-        <span className="text-sm text-gray-600">Rp {element.price},-</span>
+        <span className="text-sm text-gray-600">Rp {new Intl.NumberFormat('de-DE').format(element.price)},-</span>
       </div>
     </button>
   </li>
