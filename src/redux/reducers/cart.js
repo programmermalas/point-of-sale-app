@@ -5,6 +5,9 @@ const initialState = {
   sub_total: 0,
   ppn: 0,
   total: 0,
+  name: "",
+  no: 0,
+  date: "",
 };
 
 const add_cart = (state, action) => {
